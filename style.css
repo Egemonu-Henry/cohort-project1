@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #121e3b;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  background-color: rgba(17, 26, 46, 0.4);
+  backdrop-filter: blur(12px);
+  color: #fff;
+}
+nav .logo {
+  padding: 20px 10px;
+}
+nav .nav {
+  padding-right: 15px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+  gap: 15%;
+}
+nav ul :hover {
+  transform: scale(1.2);
+  box-shadow: -3px 4px 7px 2px black;
+}
+
+nav ul li {
+  border: 1px solid;
+  border-radius: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+}
+.hero .hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero .hero-content h1 span {
+  display: block;
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.about {
+  text-align: center;
+  font-size: 30px;
+  background-image: url();
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about .abt-content {
+  display: flex;
+  padding: 50px;
+}
+.about .abt-content .img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50px;
+  border: solid 2px;
+}
+.about .abt-content .abt-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.about .abt-content .abt-text h5 span {
+  display: block;
+}
+
+.projects {
+  padding: 40px;
+  text-align: center;
+}
+.projects h2 {
+  font-size: 30px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-top: 50px;
+}
+
+.project-card {
+  background: rgb(62, 164, 204);
+  padding: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+  height: 350px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  align-items: center;
+}
+.project-card a {
+  text-decoration: none;
+  background: rgb(62, 164, 204);
+  color: #0f172a;
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 3px 15px;
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: auto;
+  margin-bottom: 15px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: -8px 13px 12px 6px black;
+}
+
+.project-card img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+.contact h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.contact form {
+  width: 80%;
+  border: solid 2px white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.contact form .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  text-align: center;
+}
+.contact form .container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+.contact form .container label {
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex-shrink: 0;
+}
+.contact form .container input textarea {
+  width: 50%;
+}
+.contact form button {
+  width: 100px;
+  border: solid 2px white;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+p {
+  font-style: italic;
+  font-size: small;
+}/*# sourceMappingURL=style.css.map */
